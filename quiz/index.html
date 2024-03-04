@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>HiiQuizs</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="container">
+
+      <div class="itemCon illusContainer">
+
+        <div class="slideCon">
+          <div class="slide">
+            <img src="image/ques.png" alt="illus" id="first">
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCon formContainer">
+
+        <div id="signup-slide" class="form-wrapper">
+          <p class="para-link">already have an account? <span><a href="#">login</a></span></p>
+          <form action="" id="form">
+            <div class="formHeading">
+              <h2>welcome to HiiQuiz</h2>
+              <p>Register your account</p>
+            </div>
+            <label for="name">enter name</label><br>
+            <input type="text" name="name" id="name" required>
+            <span id="nameError"></span><br>
+            <label for="email">enter email</label><br>
+            <input type="email" name="email" id="email" required>
+            <span id="emailError"></span><br>
+            <label for="password">enter password</label><br>
+            <input type="password" name="password" id="password" required>
+            <span id="passwordError"></span><br>
+            <button type="submit">sign up</button>
+          </form>
+          <div class="others">
+            <p>create account with</p>
+            <div class="other">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="login-slide" class="form-wrapper">
+          <p class="para-link">Don't have an account? <span><a href="#">sign up</a></span></p>
+          <form action="" id="form">
+            <div class="formHeading">
+              <h2>welcome to HiiQuiz</h2>
+              <p>Login and start playing</p>
+            </div>
+            <label for="email">enter email</label><br>
+            <input type="email" name="email" id="login-email" required>
+            <label for="password">enter password</label><br>
+            <input type="password" name="password" id="login-password" required>
+            <p class="reset-password"><a href="#">forget password?</a></p>
+            <button type="submit" onclick="auth()">Login</button>
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="inde.js"></script>
+</body>
+</html>

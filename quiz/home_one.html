@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>HiiQuiz</title>
+  <link rel="stylesheet" href="home_one.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">
+        <h1>hii</h1>
+        <img src="image/logo.png" alt="illustra">
+      </div>
+
+      <div class="profile">
+        <div class="profilehead">
+          <img src="image/wave.svg" alt="illustration">
+          <p class="headPara" onclick="userPop()">user profile
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </p>
+        </div>
+        <div class="user" id="user">
+          <ul>
+            <li>
+              <h4>name</h4>
+              <p>hisaac Brown</p>
+            </li>
+            <li>
+              <h4>email</h4>
+              <p>admin123@gmail.com</p>
+            </li>
+            <li>
+              <h4>highest score</h4>
+              <p>8/10</p>
+            </li>
+            <li>
+              <h4><a href="#">log out</a></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section-wrapper">
+      <p>Choose one of the categories below & see how many question you can anwser
+         correctly out of 5 Question!
+      </p>
+      <div class="section-container">
+        <a href="#" onclick="selectItem(2)">
+          <div class="sections" id="one">
+            <img src="image/coding.png" alt="illustra">
+            <h4>web design</h4>
+            <p>start the basic quiz of web design from basic to advance</p>
+          </div>
+        </a>
+        <a href="#" onclick="selectItem(3)">
+          <div class="sections" id="two">
+            <img src="image/graphic-design.png" alt="illustra">
+            <h4>motion graphics</h4>
+            <p>start the basic quiz of motion graphics from basic to advance</p>
+          </div>
+        </a>
+        <a href="#" onclick="selectItem(4)">
+          <div class="sections" id="three">
+            <img src="image/coding.png" alt="illustra">
+            <h4>web development</h4>
+            <p>start the basic quiz of web development basic to advance</p>
+          </div>
+        </a>
+        <a href="#" onclick="selectItem(5)">
+          <div class="sections" id="four">
+            <img src="image/design.png" alt="illustra">
+            <h4>ui/ux design</h4>
+            <p>start the basic quiz of ui/ux design from basic to advance</p>
+          </div>
+        </a>
+        <a href="#" onclick="selectItem(1)">
+          <div class="sections" id="five">
+            <img src="image/seo (1).png" alt="illustra">
+            <h4>seo optimze</h4>
+            <p>start the basic quiz of web design from basic to advance</p>
+          </div>
+        </a>
+      </div>
+      <div class="buttonCon">
+        <button type="submit" id="start" onclick="startQuiz()">start quiz</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script defer src="home_one.js"></script>
+</body>
+</html>

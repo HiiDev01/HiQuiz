@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>HiiQuiz</title>
+  <link rel="stylesheet" href="home_four.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <nav>
+      <div class="logo">
+        <h1>hii</h1>
+        <img src="image/logo.png" alt="illustra">
+      </div>
+
+      <div class="profile">
+        <div class="profilehead">
+          <img src="image/wave.svg" alt="illustration">
+          <p class="headPara" onclick="userPop()">user profile
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </p>
+        </div>
+        <div class="user" id="user">
+          <ul>
+            <li>
+              <h4>name</h4>
+              <p>hisaac Brown</p>
+            </li>
+            <li>
+              <h4>email</h4>
+              <p>admin123@gmail.com</p>
+            </li>
+            <li>
+              <h4>highest score</h4>
+              <p>8/10</p>
+            </li>
+            <li>
+              <h4><a href="index.html">log out</a></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="header">
+        <h2>category : <span>motion graphics</span></h2>
+        <span class="quiz-index" id="quiz-index"></span>
+      </div>
+
+      <div class="questionsCon" id="questionsCon">
+
+        <div class="question">
+          <h2>which software is widely used for creating motion graphics and visual effects?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q1" id="option1">
+              adobe photoshop         
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option2" value="correct_option">
+              adobe after effects
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option3">
+              autodesk maya
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option4">
+              cinema 4d
+            </li>
+          </ul>
+        </div>
+        <!-----------------question2-->
+        <div class="question">
+          <h2>what is the term for the process of animating an object to follow a specific path in motion graphics?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opt1" value="correct_option">
+              keyframing    
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt2">
+              morphing
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt3">
+              tweening
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt4">
+              Rotoscoping
+            </li>
+          </ul>
+        </div>
+        <!-----------------question3-->
+        <div class="question">
+          <h2>which of file formats supports transparency in motion graphics</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="options1">
+              JPEG    
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options2">
+              GIF
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options3" value="correct_option">
+              PNG
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options4">
+              BMP
+            </li>
+          </ul>
+        </div>
+        <!-----------------question4-->
+        <div class="question">
+          <h2>which effect in adobe after effects is commonly used to create "glitch" effect in motion graphics</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opti1" value="correct_option">
+              Twitch   
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti2">
+              warp stabilizer
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti3">
+              Turbulent Displace
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti4">
+              Gaussian Blur
+            </li>
+          </ul>
+        </div>
+        <!-----------------question5-->
+        <div class="question">
+          <h2>what is the purpose of motion blur effect in motion graphics</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opto1">
+              to enhance the clarity of the animation   
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto2" value="correct_option">
+              To add a sense of speed and realism to moving objects
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto3">
+              To distort the shapes of objects
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto4">
+              To create a 3d effect
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="control" id="controls">
+        <button id="prev-btn">
+          <span class="prev-span"><i class="fa-solid fa-angle-left"></i></span>
+          prev
+        </button>
+        <button id="next-btn">
+          next 
+          <span class="next-span"><i class="fa-solid fa-angle-right"></i></span>
+        </button>
+      </div>
+
+      <div class="submit-container" id="submit-container">
+        <button id="submit-btn">submit</button>
+      </div>
+
+      <div class="score-container" id="score-container">
+        <h1>congratulation</h1>
+        <h2>category: motion graphics</h2>
+
+        <div class="illus-container">
+          <img src="image/single.png" alt="illustra">
+          <div class="score-wrapper">
+            <h3>you answered</h3>
+            <p id="score"></p>
+            <h3>question correctly</h3>
+          </div>
+          <img src="image/single2.png" alt="illustra">
+        </div>
+        <div class="restart-con">
+          <button id="restart">restart</button>
+          <a href="home_one.html">Back to Home</a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <script src="home_four.js"></script>
+</body>
+</html>

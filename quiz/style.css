@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --body-color: #fcfcfc;
+  --main-color: #222222;
+  --background-color: #8093ff;
+  --alternative-color: #0e1c36;
+  --subordinate-color: #fafafa;
+  --body-font: "Poppins", sans-serif;
+  --main-font: "Open Sans", sans-serif;
+  --paragraph-color: #333333;
+}
+.wrapper{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  background-color: var(--background-color);
+  background-image: url(images/shap1.png),
+   url(images/shap2.png) ;
+  background-position: left top, right bottom;
+  background-repeat: repeat;
+  background-size: auto;
+}
+.container{
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+.itemCon{
+  width: calc(100% / 2);
+  padding: 5px;
+}
+.illusContainer{
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.slideCon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+.slide img{
+  width: 80%;
+  min-height: 90vh;
+  max-height: 90vh;
+  object-fit: cover;
+}
+/******************FORM***********/
+.formContainer{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  user-select: none;
+}
+.form-wrapper{
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s ease-in-out;
+}
+form{
+  padding: 20px;
+  height: auto;
+}
+.para-link{
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--paragraph-color);
+  margin: 0px 0px 40px 0px;
+}
+.para-link span{
+  margin: 0px 0px 0px 10px;
+}
+.para-link span a{
+  font-size: 0.8rem;
+  color: var(--paragraph-color);
+  font-family: var(--body-font);
+  text-decoration: none;
+  border: 1px solid var(--paragraph-color);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 400;
+}
+.para-link span a:hover{
+}
+.formHeading{
+  width: 100%;
+}
+.formHeading h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--paragraph-color);
+  font-family: var(--body-font);
+}
+.formHeading p{
+  font-size: 0.89rem;
+  font-weight: 400;
+  font-family: var(--main-font);
+  color: var(--paragraph-color);
+  margin: 0px 0px 30px 0px;
+}
+form label{
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  color: var(--paragraph-color);
+  padding: 10px 0px;
+}
+form input{
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  padding: 14px 12px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--paragraph-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+form input:focus{
+  outline: 1px solid var(--background-color);
+}
+#passwordError,#nameError,#emailError{
+  color: red;
+  font-size: 0.8rem;
+  font-family: var(--body-font);
+  margin-bottom: 10px;
+}
+form button{
+  font-size: 0.8rem;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--body-color);
+  background-color: var(--background-color);
+  border: none;
+  padding: 8px 40px;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+.others{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 20px;
+}
+.others p{
+  font-size: 0.9rem;
+  font-family: var(--main-font);
+  color: var(--paragraph-color);
+  font-weight: 400;
+}
+.other{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.other a{
+  margin: 0px 5px;
+  text-decoration: none;
+  background-color: var(--body-color);
+  box-shadow: 0 0 2px wheat;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.other a:nth-child(1){
+  color: 	#4267B2;
+}
+.other a:nth-child(2){
+  color: #0077b5;
+}
+.other a:nth-child(3){
+  color: 	#DB4437;
+}
+#signup-slide{
+  transform: translateX(0);
+}
+#login-slide{
+  transform: translateX(-100%);
+}
+.reset-password{
+  width: 100%;
+  text-align: right;
+  margin: 0px 0px 10px 0px;
+}
+.reset-password a{
+  font-size: 0.9rem;
+  font-family: var(--main-font);
+  font-family: 400;
+  color: var(--background-color);
+}
+
+@media screen and (max-width: 967px){
+  .wrapper{
+    width: 100%;
+    height: 90vh;
+    padding: 20px 20px;
+    background-color: var(--background-color);
+    background-image: url(images/shap1.png),
+     url(images/shap2.png) ;
+    background-position: left top, right bottom;
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    background-color: var(--body-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .itemCon{
+    width: calc(100%);
+    padding: 5px;
+  }
+  .illusContainer{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    display: none;
+  }
+  
+  .slideCon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+  .slide{
+    width: 100%;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #fff;
+  }
+  .slide img{
+    width: 80%;
+    min-height: 90vh;
+    max-height: 90vh;
+    object-fit: cover;
+  }
+  /******************FORM***********/
+  .formContainer{
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    user-select: none;
+  }
+  .form-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.2s ease-in-out;
+  }
+}

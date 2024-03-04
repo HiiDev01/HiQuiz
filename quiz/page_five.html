@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>HiiQuiz</title>
+  <link rel="stylesheet" href="home_five.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <nav>
+      <div class="logo">
+        <h1>hii</h1>
+        <img src="image/logo.png" alt="illustra">
+      </div>
+
+      <div class="profile">
+        <div class="profilehead">
+          <img src="image/wave.svg" alt="illustration">
+          <p class="headPara" onclick="userPop()">user profile
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </p>
+        </div>
+        <div class="user" id="user">
+          <ul>
+            <li>
+              <h4>name</h4>
+              <p>hisaac Brown</p>
+            </li>
+            <li>
+              <h4>email</h4>
+              <p>admin123@gmail.com</p>
+            </li>
+            <li>
+              <h4>highest score</h4>
+              <p>8/10</p>
+            </li>
+            <li>
+              <h4><a href="index.html">log out</a></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="header">
+        <h2>category : <span>web development</span></h2>
+        <span class="quiz-index" id="quiz-index"></span>
+      </div>
+
+      <div class="questionsCon" id="questionsCon">
+
+        <div class="question">
+          <h2>what does HTML stand for?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q1" id="option1">
+              Hyper Transfer Makeup Language        
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option2" value="correct_option">
+              Hyper Text Makeup Language 
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option3">
+              Hyperlinks and  Text Makeup Language 
+            </li>
+            <li>
+              <input type="radio" name="q1" id="option4">
+              Hyper Tool Makeup Language 
+            </li>
+          </ul>
+        </div>
+        <!-----------------question2-->
+        <div class="question">
+          <h2>which of the following is NOT a programming language commonly used in web development?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opt1" >
+              Python
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt2">
+              JavaScript
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt3">
+              HTML
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opt4" value="correct_option">
+              Swift
+            </li>
+          </ul>
+        </div>
+        <!-----------------question3-->
+        <div class="question">
+          <h2>what does CSS stand for and what is its functionality in web development</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="options1">
+              Creative Styke Sheet - for making and line    
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options2">
+              Computer Style Sheets - for passing data and getting output
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options3" value="correct_option">
+              Cascading Style Sheets - for styling the interface of webpage
+            </li>
+            <li>
+              <input type="radio" name="q2" id="options4">
+              Colorful Style Sheets - for making awesome color to fix the webpage
+            </li>
+          </ul>
+        </div>
+        <!-----------------question4-->
+        <div class="question">
+          <h2>which tag is used to define an unordered list in HTML</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opti1" >
+              LI
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti2">
+              OE
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti3">
+              OL
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opti4" value="correct_option">
+              UL
+            </li>
+          </ul>
+        </div>
+        <!-----------------question5-->
+        <div class="question">
+          <h2>What is the correct way to comment out code in HTML</h2>
+          <ul>
+            <li>
+              <input type="radio" name="q2" id="opto1" >
+              //This is a comment    
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto2" value="correct_option">
+                ! ------this  is  comment- - >
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto3">
+              /*This is a comment */
+            </li>
+            <li>
+              <input type="radio" name="q2" id="opto4">
+              #/ This is  a comment
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="control" id="controls">
+        <button id="prev-btn">
+          <span class="prev-span"><i class="fa-solid fa-angle-left"></i></span>
+          prev
+        </button>
+        <button id="next-btn">
+          next 
+          <span class="next-span"><i class="fa-solid fa-angle-right"></i></span>
+        </button>
+      </div>
+
+      <div class="submit-container" id="submit-container">
+        <button id="submit-btn">submit</button>
+      </div>
+
+      <div class="score-container" id="score-container">
+        <h1>congratulation</h1>
+        <h2>category: web development</h2>
+
+        <div class="illus-container">
+          <img src="image/single.png" alt="illustra">
+          <div class="score-wrapper">
+            <h3>you answered</h3>
+            <p id="score"></p>
+            <h3>question correctly</h3>
+          </div>
+          <img src="image/single2.png" alt="illustra">
+        </div>
+        <div class="restart-con">
+          <button id="restart">restart</button>
+          <a href="home_one.html">Back to Home</a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <script src="home_five.js"></script>
+</body>
+</html>
